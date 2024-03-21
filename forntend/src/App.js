@@ -1,24 +1,24 @@
-import React, { Component, useState }  from 'react'; 
+import React, { Component, useState }  from 'react';
 
 function App() {
-  
+
   const [server,setServer] = useState()
-   
-  const url = '333' 
-  
+
+  const url = '333'
+
   fetch(url)
-    .then((response) => { 
+    .then((response) => {
       return response.json();
     })
-    .then((data) => {  
+    .then((data) => {
         setServer(data.created)
        console.log(data.created)
     })
 
   return (
-    <div className="App"> 
+    <div className="App">
        {server}
-       <p>pra</p>
+       <p>pra tanina</p>
     </div>
   );
 }
